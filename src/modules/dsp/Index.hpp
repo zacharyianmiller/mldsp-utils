@@ -23,7 +23,8 @@ public:
     /// @param bounds Maximum length of index's intended buffer.
     Index(int val = 0, const int bounds = 0) : mBounds(bounds), mPos(val % mBounds), mInitPos(mPos) {}
 
-    /
+    /// @brief Copy constructor.
+    /// @param other Index to copy from.
     Index(Index& other) : mPos(other.mPos), mInitPos(other.mInitPos), mBounds(other.mBounds) {}
 
     operator int &() { return mPos; }
