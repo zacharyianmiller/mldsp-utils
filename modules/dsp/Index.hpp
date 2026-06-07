@@ -1,7 +1,5 @@
 #pragma once
 
-#include "mldsp_utils_c_inc.hpp"
-
 /**
  * @file Index.hpp
  * @brief Wrapper around fundamental integer type
